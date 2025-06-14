@@ -26,11 +26,12 @@ public class Employee {
     @Column(name = "employee_pwd", nullable = false)
     private String employeePwd;                  // 비밀번호
 
-    @Column(name = "employee_photo_name")
+    @Column(name = "employee_photo_name", nullable = false)
     private String employeePhotoName;            // 프로필 사진 파일명
 
     @Column(name = "employee_photo_url",
-    columnDefinition = "TEXT")
+            nullable = false,
+            columnDefinition = "TEXT")
     private String employeePhotoUrl;             // 프로필 사진 URL
 
     @Column(name = "employee_nation", nullable = false)
